@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: white;
+      }
+      #aguulga {
+        width: 1120px;
+        height: 2650px;
+        background-color: #0f0f1b;
+        color: white;
+        margin: 0 auto;
+      }
+      #nav {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px #4d43544d solid;
+        box-shadow: 0 0 12px #ddb7ff33;
+      }
+
+      #color {
+        color: #ddb7ff;
+        border-bottom: 2px #ddb7ff solid;
+        padding-bottom: 4px;
+        box-shadow: #ddb7ff33;
+      }
+      #nav-holboos {
+        display: flex;
+        gap: 40px;
+        color: #cfc2d6;
+        align-items: center;
+      }
+      button {
+        background-color: #ddb7ff;
+        border-color: #ddb7ff;
+        width: 150px;
+        height: 40px;
+        color: #490080;
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow: 0 0 20px #ddb7ff66;
+      }
+      button:hover {
+        box-shadow: #ddb7ff66;
+      }
+      #hero-section {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      #hero {
+        width: 580px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+        padding: 20px;
+        padding-top: 100px;
+      }
+      #hero1 {
+        color: #adc6ff;
+        color: #ddb7ff;
+      }
+      #hero2 {
+        color: #cfc2d6;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+      #box1 {
+        width: 600px;
+        height: 500px;
+        border-radius: 40px;
+        padding: 20px;
+        background-image: url(./play3.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        color: #12121ecc;
+        border-bottom: 1px #ffb0cd4d solid;
+        box-shadow: 0 0 40px #adc6ff33;
+      }
+      #button8 {
+        width: 140px;
+        height: 30px;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: black;
+        border-color: #ffb0cd4d;
+        color: #ffb0cd;
+      }
+      #music {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        color: #ddb7ff;
+        font-size: 48px;
+        line-height: 56px;
+      }
+      #music2 {
+        display: flex;
+        justify-content: center;
+        color: #cfc2d6;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      #nemelt {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+      }
+      #box {
+        width: 350px;
+        height: 350px;
+        border-radius: 40px;
+        background-image: url(./play1.png);
+        background-size: cover;
+        box-shadow: 0 0 40px #adc6ff33;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 20px;
+      }
+      #button5 {
+        width: 120px;
+        height: 30px;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b76dff33;
+        color: #ddb7ff;
+        border-color: #ddb7ff4d;
+      }
+      #button6 {
+        width: 130px;
+        height: 30px;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #adc6ff;
+        background-color: #0566d933;
+        border-color: #adc6ff4d;
+      }
+      #button7 {
+        width: 130px;
+        height: 30px;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffb0cd;
+        background-color: #f751a133;
+        border-color: #ffb0cd4d;
+      }
+      #color1 {
+        color: #adc6ff;
+      }
+      #niil {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        padding-top: 30px;
+      }
+      #loc {
+        border-width: 1px;
+        border-style: solid;
+        width: 340px;
+        height: 70px;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #1f1e2b;
+        border-color: #4d435433;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      #button2 {
+        background-color: #adc6ff;
+        color: #002e6a;
+        border-color: #adc6ff;
+        width: 300px;
+        height: 75px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        box-shadow: 0 0 20px #adc6ff66;
+      }
+      #button-hol {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        padding-left: 20px;
+        border-bottom: 1px #4d435433 solid;
+        color: #adc6ff;
+      }
+      #button-hol1 {
+        display: flex;
+        gap: 5px;
+      }
+      #button3 {
+        background-color: #ddb7ff33;
+        color: #ddb7ff;
+        border-color: #ddb7ff80;
+        width: 80px;
+        height: 30px;
+        padding: 5px;
+      }
+      #button3:hover {
+        background-color: black;
+      }
+      #nemelt1 {
+        width: 100%;
+        height: 310px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #nav1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #1f1e2b;
+        border-bottom: 1px #00000000 solid;
+      }
+      #ungu {
+        color: #ddb7ff;
+        font-family: "Anybody", sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+      }
+      #ungu1 {
+        color: #ffb0cd;
+        font-family: "Anybody", sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+      }
+      #ungu2 {
+        color: #adc6ff;
+        font-family: "Anybody", sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+      }
+      #stage {
+        background-color: #383846;
+        color: #e3e0f2;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #e3e0f2;
+      }
+      .negtgel {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+        justify-content: center;
+        border-bottom: 1px #4d435433 solid;
+      }
+      .sponsor-box {
+        background-color: #1f1e2b80;
+        border-radius: 30px;
+        padding: 50px;
+        width: 500px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        color: #e3e0f2;
+      }
+      .sponsor-item {
+        background-color: #1f1e2b;
+        border-radius: 20px;
+        height: 90px;
+        width: 180px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: x-small;
+      }
+      .strategic-box {
+        background-color: #1f1e2b80;
+        padding: 35px;
+        border-radius: 30px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #e3e0f2;
+      }
+      .strategic-item {
+        background-color: #1f1e2b;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-size: x-small;
+        gap: 20px;
+      }
+      .partner-section {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        color: #ddb7ff;
+      }
+      .partner-section1 {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        color: #adc6ff;
+      }
+      .non1 {
+        border-bottom: 1px #4d435433 solid;
+        padding: 20px;
+        display: flex;
+        font-family: "Anybody", sans-serif;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 800;
+        color: #ddb7ff;
+      }
+      .non2 {
+        border-bottom: 1px #4d435433 solid;
+        padding: 20px;
+        display: flex;
+        font-family: "Anybody", sans-serif;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 800;
+        color: #adc6ff;
+      }
+      #end {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        padding-top: 30px;
+      }
+      #end-holboos1 {
+        display: flex;
+        gap: 20px;
+      }
+      .Icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .box3 {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #adc6ff1a;
+        border-radius: 50%;
+      }
+      .icon1 {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #title2 {
+        font-family: "Anybody", sans-serif;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 800;
+        color: #ddb7ff;
+      }
+      #title3 {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+      #title4 {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #adc6ff;
+      }
+      #title5 {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        color: #cfc2d6;
+      }
+      #title51 {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #e3e0f2;
+      }
+      #title6 {
+        font-family: "Anybody", sans-serif;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 800;
+        color: #adc6ff;
+      }
+      #title7 {
+        font-family: "Anybody", sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #e3e0f2;
+      }
+      #title71 {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #cfc2d6;
+      }
+      #title8 {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #e3e0f2;
+      }
+      #title9 {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #cfc2d6;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="aguulga">
+      <div id="nav">
+        <div>
+          <img src="./PT logo 2.2922ebe0 1.png" alt="" />
+        </div>
+        <div id="nav-holboos">
+          <span>Lineup</span>
+          <span>Schedule</span>
+          <span id="color">Tickets</span>
+        </div>
+        <button>Get Tickets</button>
+      </div>
+      <div id="hero-section">
+        <div id="hero">
+          <div id="hero1">
+            <div>
+              <img src="./PLAYTIME FESTIVAL.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <div class="icon1">
+              <img src="./Icon (3).png" width="20px" height="20px" alt="" />
+              <div id="title4">
+                <p>JULY 15-17, 2024</p>
+                <link
+                  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+                  rel="stylesheet"
+                />
+              </div>
+              <div class="icon1">
+                <img src="./ margin1.png" alt="" />
+              </div>
+              <div class="icon1">
+                <img src="Icon (4).png" alt="" />
+                <div id="title4">
+                  <p>NEON CITY PARK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p id="hero2">
+            The ultimate summer music experience for next generation. Three days
+            of non-stop beats, vibrant lights, and unforgettable memories.
+          </p>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+          />
+          <button id="button2">
+            <h1>Join the beat</h1>
+            <img src="./Container 3.png" alt="" />
+          </button>
+        </div>
+        <div id="box1">
+          <button id="button8">
+            <div>
+              <div class="icon1">
+                <img src="./Background.png" width="10px" height="10px" alt="" />
+                <p>LIVE MUSIC</p>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div id="music">
+        <div>
+          <h1 id="title2">MEET THE HEADLINERS</h1>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+          />
+          <div id="music2">
+            <h5 id="title3">
+              The biggest acts lighting up the main stage this summer.
+            </h5>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+              rel="stylesheet"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="nemelt">
+          <div id="box">
+            <button id="button5">Pop / Synth</button>
+            <h1>Nova Sky</h1>
+            <h4 id="color1">View bio ></h4>
+          </div>
+          <div id="box">
+            <button id="button6">EDM / House</button>
+            <h1>DJ Pulse</h1>
+            <h4 id="color1">View bio ></h4>
+          </div>
+          <div id="box">
+            <button id="button7">Indie Rock</button>
+            <h1>The Echoes</h1>
+            <h4 id="color1">View bio ></h4>
+          </div>
+        </div>
+      </div>
+      <div id="niil">
+        <div id="loc">
+          <div class="Icon">
+            <div>
+              <img src="./Icon.png" width="20px" height="20px" alt="" />
+            </div>
+            <div id="title5">
+              <p>Date</p>
+              <h3 id="title51">July 15-17</h3>
+              <link
+                href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+                rel="stylesheet"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="loc">
+          <div class="Icon">
+            <div>
+              <img src="./Icon (1).png" width="20px" height="20px" alt="" />
+            </div>
+            <div id="title5">
+              <p>Location</p>
+              <h4 id="title51">Neon City</h4>
+            </div>
+          </div>
+        </div>
+        <div id="loc">
+          <div class="Icon">
+            <div>
+              <img src="./Icon (2).png" width="20px " height="20px" alt="" />
+            </div>
+            <div id="title5">
+              <p>Price</p>
+              <h4 id="title51">$99/3-Day Pass/</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="button-hol">
+        <h1 id="title6">FESTIVAL SCHEDULE</h1>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <div id="button-hol1">
+          <button id="button3">Day 1</button>
+          <button id="button3">Day 2</button>
+          <button id="button3">Day 3</button>
+        </div>
+      </div>
+      <div id="nemelt1">
+        <div id="nav1">
+          <h2 id="ungu">2:00 PM</h2>
+          <div>
+            <h3 id="title7">Nova sky</h3>
+            <h4 id="title71">Main Stage</h4>
+          </div>
+          <h5 id="stage">Main Stage</h5>
+        </div>
+        <div id="nav1">
+          <h2 id="ungu1">5:00 PM</h2>
+          <div>
+            <h3 id="title7">The Echoes</h3>
+            <h4 id="title71">Main Stage</h4>
+          </div>
+          <h5 id="stage">Main Stage</h5>
+        </div>
+        <div id="nav1">
+          <h2 id="ungu2">9:00 PM</h2>
+          <div>
+            <h3 id="title7">DJ Pulse</h3>
+            <h4 id="title71">Main Stage</h4>
+          </div>
+          <h5 id="stage">Main Stage</h5>
+        </div>
+      </div>
+      <div class="negtgel">
+        <div class="partner-section">
+          <h1 class="non1">OUR SPONSORS</h1>
+          <div class="sponsor-box">
+            <div class="sponsor-item">
+              <div class="box3">
+                <img
+                  src="./Margin (3).png"
+                  width="20px "
+                  height="20px"
+                  alt=""
+                />
+              </div>
+              <span id="title8">SOUNDWAVE AUDIO</span>
+            </div>
+            <div class="sponsor-item">
+              <div class="box3">
+                <img src="./Margin.png" width="20px " height="20px" alt="" />
+              </div>
+              <span id="title8">ECLIPSE STAGE</span>
+            </div>
+            <div class="sponsor-item">
+              <div class="box3">
+                <img
+                  src="./Margin (1).png"
+                  width="20px "
+                  height="20px"
+                  alt=""
+                />
+              </div>
+              <span id="title8">QUANTUM CONNEVTIVITY</span>
+            </div>
+            <div class="sponsor-item">
+              <div class="box3">
+                <img
+                  src="./Margin (2).png"
+                  width="20px "
+                  height="20px"
+                  alt=""
+                />
+              </div>
+              <span id="title8">HARMONY FINANCIAL</span>
+            </div>
+          </div>
+        </div>
+        <div class="partner-section1">
+          <h1 class="non2">STRATEGIC PARTNERS</h1>
+          <div class="strategic-box">
+            <div class="strategic-item">
+              <div class="box3">
+                <img src="./Container.png" width="20px " height="20px" alt="" />
+              </div>
+              <span id="title8"> SONIC SYNS MEDIA</span>
+            </div>
+            <div class="strategic-item">
+              <div class="box3">
+                <img
+                  src="./Container (1).png"
+                  width="20px "
+                  height="20px"
+                  alt=""
+                />
+              </div>
+              <span id="title8"> NEXUS AUDIO TECH</span>
+            </div>
+            <div class="strategic-item">
+              <div class="box3">
+                <img
+                  src="./Container (2).png"
+                  width="20px "
+                  height="20px"
+                  alt=""
+                />
+              </div>
+              <span id="title8"> STREAMFLOW LIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id=" end2">
+        <div id="end">
+          <div>
+            <img src="./PT logo 2.2922ebe0 1.png" alt="" />
+          </div>
+          <div id="end-holboos">
+            <span id="title71"
+              >2024 NEON BEAT FESTIVAL.ALL RIGHTS RESERVED.</span
+            >
+          </div>
+          <div id="end-holboos1">
+            <span id="title9">Privacy</span>
+            <span id="title9">Terms</span>
+            <span id="title9">Safely</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
